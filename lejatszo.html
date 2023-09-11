@@ -7,12 +7,20 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico">
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <script src="script.js"></script>
+    <script src="https://www.google.com/recaptcha/enterprise.js?render=6LdGWREoAAAAAF6KdsJstjwxuxR8bJfEWocc8n1A"></script>
 </head>
 <body>
-    <center><video controls src="https://media.magyarhu.tk/kisantant_2023_09_10.mp4" style="width:1080px;height:720px;overflow:scroll;" id="MyFrame" type="video/mp4"></video></center>
+    <script  src="https://www.google.com/recaptcha/enterprise.js?render=6LdGWREoAAAAAF6KdsJstjwxuxR8bJfEWocc8n1A"></script>
+<script>
+  grecaptcha.enterprise.ready(async () => {
+    const token = await grecaptcha.enterprise.execute('6LdGWREoAAAAAF6KdsJstjwxuxR8bJfEWocc8n1A', {action: 'homepage'});
+  });
+</script>
+</script>
+    <center><video controls src="https://media.magyarhu.tk/kisantant_2023_09_10.mp4" id="MyFrame" type="video/mp4" style="width:100%;"></video></center>
     <center><select class="href" id="MySelectMenu">
   <option value="https://media.magyarhu.tk/kisantant_2023_09_10.mp4" >Kis Antant</option>
-  <option value="https://media.magyarhu.tk/kerek_korona.mp4">Kerek Korona</option>
+  <option value="https://media.magyarhu.tk/kerek_korona.mp4">"Kerek Korona"</option>
   <option value="https://media.magyarhu.tk/2023_Augusztus.mp4">Augusztus</option>
   <option value="https://media.magyarhu.tk/uj_bulgaria_optimizalt.mp4">Új Bulgária (Optimizált)</option>
   <option value="https://media.magyarhu.tk/2023_1_optimizalt.mp4">2023 1. (Optimizált)</option>
@@ -21,5 +29,7 @@
   <option value="https://media.magyarhu.tk/1_eves_mordor.mp4">1 Éves Mordor</option>
 </select>
 <button class="href" onClick="newSrc();">Lejátszó módosítása!</button></center>
+<center><button class="href" onclick="window.location.href='https://magyarhu.tk';">Főoldal</button></center>
+<center><a1>Elvileg az optimizáltak nem működnek okostelefonokon :c.</a></center>
 </body>
 </html>
